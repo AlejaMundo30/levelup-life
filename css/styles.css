@@ -822,3 +822,29 @@ nav {
   .stat-grid { grid-template-columns: 1fr; }
   .app { padding: 12px; }
 }
+
+.update-banner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 16px;
+  background: linear-gradient(135deg, #7c3aed, #ec4899);
+  border-radius: var(--radius);
+  margin-bottom: 12px;
+  color: white;
+  font-size: 14px;
+  font-weight: 600;
+  animation: slideDown 0.4s ease;
+}
+
+.update-banner button {
+  background: white;
+  color: #7c3aed;
+  border: none;
+  font-weight: 700;
+}
+
+@keyframes slideDown {
+  from { opacity: 0; transform: translateY(-20px); }
+  to { opacity: 1; transform: translateY(0); }
+}

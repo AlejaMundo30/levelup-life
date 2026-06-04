@@ -1,4 +1,4 @@
-const CACHE_NAME = 'levelup-life-v1';
+const CACHE_NAME = 'levelup-life-v2';
 const ASSETS = [
   '/',
   '/index.html',
@@ -37,6 +37,15 @@ self.addEventListener('activate', e => {
 
 self.addEventListener('fetch', e => {
   e.respondWith(
-    caches.match(e.request).then(r => r || fetch(e.request))
+    caches.match(e.request).then(cached => {
+      const fetched = fetch(e.request).then(response => {
+        if (response && response.status === 200) {
+          const clone = response.clone();
+          caches.open(CACHE_NAME).then(cache => cache.put(e.request, clone));
+        }
+        return response;
+      }).catch(() => cached);
+      return cached || fetched;
+    })
   );
 });

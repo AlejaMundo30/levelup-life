@@ -16,6 +16,7 @@ const SCHEDULE = [
 
 let currentTab = 'inicio';
 let booksData = null;
+let newWorker = null;
 
 const App = {
   async init() {
@@ -34,6 +35,24 @@ const App = {
     this.render();
     this.setupNav();
     this.registerSW();
+    this.checkForUpdates();
+  },
+
+  checkForUpdates() {
+    if ('serviceWorker' in navigator) {
+      setInterval(() => {
+        navigator.serviceWorker.getRegistration().then(reg => {
+          if (reg) reg.update();
+        });
+      }, 60000);
+    }
+  },
+
+  applyUpdate() {
+    if (newWorker) {
+      newWorker.postMessage({ type: 'SKIP_WAITING' });
+    }
+    window.location.reload();
   },
 
   applyTheme() {
@@ -51,7 +70,21 @@ const App = {
 
   registerSW() {
     if ('serviceWorker' in navigator) {
-      navigator.serviceWorker.register('sw.js').catch(() => {});
+      navigator.serviceWorker.register('sw.js').then(reg => {
+        reg.addEventListener('updatefound', () => {
+          newWorker = reg.installing;
+          newWorker.addEventListener('statechange', () => {
+            if (newWorker.state === 'installed' && navigator.serviceWorker.controller) {
+              const banner = document.getElementById('update-banner');
+              if (banner) banner.style.display = 'flex';
+            }
+          });
+        });
+      }).catch(() => {});
+
+      navigator.serviceWorker.addEventListener('controllerchange', () => {
+        window.location.reload();
+      });
     }
   },
 
