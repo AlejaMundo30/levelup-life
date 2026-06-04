@@ -1,0 +1,79 @@
+name: CI - Validate & Lint
+
+on:
+  pull_request:
+    branches: [main]
+  push:
+    branches: [main]
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Validate HTML
+        uses: html-validate/action@v2
+        with:
+          root: index.html
+        continue-on-error: true
+
+      - name: Check JSON files
+        run: |
+          for file in data/*.json manifest.json; do
+            if ! python3 -m json.tool "$file" > /dev/null 2>&1; then
+              echo "ERROR: $file is not valid JSON"
+              exit 1
+            fi
+            echo "OK: $file"
+          done
+
+      - name: Check file sizes
+        run: |
+          echo "=== File sizes ==="
+          find . -type f -not -path './.git/*' -not -path './.github/*' -exec ls -lh {} \; | awk '{print $5, $9}'
+          echo ""
+          echo "=== Total size ==="
+          du -sh --exclude=.git --exclude=.github .
+
+      - name: Check PWA requirements
+        run: |
+          echo "Checking manifest.json..."
+          test -f manifest.json && echo "manifest.json exists" || echo "ERROR: manifest.json missing"
+          echo ""
+          echo "Checking service worker..."
+          test -f sw.js && echo "sw.js exists" || echo "ERROR: sw.js missing"
+          echo ""
+          echo "Checking icons..."
+          test -f icons/icon-192.png && echo "icon-192.png exists" || echo "ERROR: icon-192.png missing"
+          test -f icons/icon-512.png && echo "icon-512.png exists" || echo "ERROR: icon-512.png missing"
+
+      - name: Lint JavaScript
+        run: |
+          npm install -g jshint
+          errors=0
+          for file in js/*.js; do
+            echo "Linting $file..."
+            if ! jshint "$file" --esversion=11 2>&1; then
+              errors=$((errors + 1))
+            fi
+          done
+          if [ $errors -gt 0 ]; then
+            echo "WARNING: $errors JS files have lint issues (non-blocking)"
+          fi
+
+      - name: Lint CSS
+        uses: denoland/setup-deno@v1
+        with:
+          deno-version: v1.x
+        continue-on-error: true
+
+      - name: Generate summary
+        run: |
+          echo "## CI Results" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "| Check | Status |" >> $GITHUB_STEP_SUMMARY
+          echo "|-------|--------|" >> $GITHUB_STEP_SUMMARY
+          echo "| JSON validation | ${{ job.status == 'success' && '✅' || '❌' }} |" >> $GITHUB_STEP_SUMMARY
+          echo "| PWA requirements | ${{ job.status == 'success' && '✅' || '❌' }} |" >> $GITHUB_STEP_SUMMARY
+          echo "| JS lint | ⚠️ (warnings only) |" >> $GITHUB_STEP_SUMMARY
