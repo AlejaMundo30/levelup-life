@@ -1,0 +1,20 @@
+[
+  {"mes": 1, "libro": "Clean Code - Robert C. Martin", "tema": "Buenas prácticas", "paginas": 464},
+  {"mes": 2, "libro": "Clean Code (cont.) + práctica", "tema": "Buenas prácticas", "paginas": 0},
+  {"mes": 3, "libro": "Head First Design Patterns", "tema": "Patrones de diseño", "paginas": 694},
+  {"mes": 4, "libro": "Head First Design Patterns (cont.)", "tema": "Patrones de diseño", "paginas": 0},
+  {"mes": 5, "libro": "Fundamentals of Software Architecture - Richards/Ford", "tema": "Arquitectura", "paginas": 350},
+  {"mes": 6, "libro": "Designing Data-Intensive Applications - Kleppmann", "tema": "System Design", "paginas": 616},
+  {"mes": 7, "libro": "Designing Data-Intensive Applications (cont.)", "tema": "System Design", "paginas": 0},
+  {"mes": 8, "libro": "Hands-On Machine Learning - Aurélien Géron", "tema": "IA / ML", "paginas": 850},
+  {"mes": 9, "libro": "Hands-On Machine Learning (cont.)", "tema": "IA / ML", "paginas": 0},
+  {"mes": 10, "libro": "The Manager's Path - Camille Fournier", "tema": "Liderazgo técnico", "paginas": 268},
+  {"mes": 11, "libro": "Radical Candor - Kim Scott", "tema": "Liderazgo / Comunicación", "paginas": 288},
+  {"mes": 12, "libro": "An Elegant Puzzle - Will Larson", "tema": "Liderazgo técnico", "paginas": 304},
+  {"mes": "extra-1", "libro": "Padre Rico Padre Pobre - Robert Kiyosaki", "tema": "Finanzas", "paginas": 336},
+  {"mes": "extra-2", "libro": "Como Ganar Amigos e Influir - Dale Carnegie", "tema": "Comunicación", "paginas": 304},
+  {"mes": "extra-3", "libro": "Atomic Habits - James Clear", "tema": "Hábitos", "paginas": 320},
+  {"mes": "extra-4", "libro": "The Intelligent Investor - Benjamin Graham", "tema": "Inversión", "paginas": 640},
+  {"mes": "extra-5", "libro": "Life 3.0 - Max Tegmark", "tema": "IA", "paginas": 380},
+  {"mes": "extra-6", "libro": "Deep Work - Cal Newport", "tema": "Productividad", "paginas": 304}
+]

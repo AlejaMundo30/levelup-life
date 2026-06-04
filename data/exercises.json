@@ -1,0 +1,81 @@
+[
+  {
+    "dia": "Lunes",
+    "tipo": "Pesas - Tren Superior",
+    "icono": "💪",
+    "ejercicios": [
+      {"nombre": "Calentamiento", "detalle": "5 min caminata en trotadora", "sets": 1, "reps": "5 min"},
+      {"nombre": "Press de pecho en silla", "detalle": "Silla reclinable, pesas, empuja hacia arriba", "sets": 4, "reps": "12"},
+      {"nombre": "Press de hombros", "detalle": "De pie, pesas a los lados, empuja hacia arriba", "sets": 3, "reps": "12"},
+      {"nombre": "Curl de bíceps", "detalle": "De pie, pesas, flexiona codos", "sets": 3, "reps": "15"},
+      {"nombre": "Extensión de tríceps", "detalle": "Detrás de la cabeza con pesa, extiende", "sets": 3, "reps": "15"},
+      {"nombre": "Remo con pesas", "detalle": "Inclinada, pesas hacia la cintura", "sets": 3, "reps": "12"},
+      {"nombre": "Enfriamiento", "detalle": "5 min estiramientos", "sets": 1, "reps": "5 min"}
+    ]
+  },
+  {
+    "dia": "Martes",
+    "tipo": "Cardio - Caminata Inclinada",
+    "icono": "🏃‍♀️",
+    "ejercicios": [
+      {"nombre": "Caminata en trotadora", "detalle": "Velocidad 5.5-6 km/h, inclinación 8-10%", "sets": 1, "reps": "30-40 min"},
+      {"nombre": "Estiramientos", "detalle": "Piernas, cadera, espalda baja", "sets": 1, "reps": "5 min"}
+    ]
+  },
+  {
+    "dia": "Miércoles",
+    "tipo": "Pesas - Tren Inferior",
+    "icono": "🦵",
+    "ejercicios": [
+      {"nombre": "Calentamiento", "detalle": "5 min caminata en trotadora", "sets": 1, "reps": "5 min"},
+      {"nombre": "Sentadillas con pesas", "detalle": "Pesas en los hombros, baja como si te sentaras", "sets": 4, "reps": "15"},
+      {"nombre": "Estocadas (lunges)", "detalle": "Un paso adelante, baja la rodilla trasera", "sets": 3, "reps": "12 cada pierna"},
+      {"nombre": "Peso muerto", "detalle": "Pesas, inclínate desde la cadera, sube apretando glúteos", "sets": 4, "reps": "12"},
+      {"nombre": "Elevación de talones", "detalle": "De pie con pesas, sube en las puntas", "sets": 3, "reps": "20"},
+      {"nombre": "Puente de glúteo", "detalle": "En el suelo, sube la cadera apretando glúteos", "sets": 3, "reps": "15"},
+      {"nombre": "Enfriamiento", "detalle": "5 min estiramientos piernas", "sets": 1, "reps": "5 min"}
+    ]
+  },
+  {
+    "dia": "Jueves",
+    "tipo": "Cardio - Intervalos",
+    "icono": "⚡",
+    "ejercicios": [
+      {"nombre": "Calentamiento", "detalle": "Caminata suave 5 min", "sets": 1, "reps": "5 min"},
+      {"nombre": "Intervalos", "detalle": "1 min corriendo + 2 min caminando (repetir 10x)", "sets": 10, "reps": "30 min total"},
+      {"nombre": "Enfriamiento", "detalle": "Caminata suave + estiramientos", "sets": 1, "reps": "5 min"}
+    ]
+  },
+  {
+    "dia": "Viernes",
+    "tipo": "Full Body + Cardio",
+    "icono": "🔥",
+    "ejercicios": [
+      {"nombre": "Calentamiento", "detalle": "5 min trotadora", "sets": 1, "reps": "5 min"},
+      {"nombre": "Sentadillas con pesas", "detalle": "Peso en hombros, baja controlada", "sets": 3, "reps": "12"},
+      {"nombre": "Press de pecho en silla", "detalle": "Silla reclinable", "sets": 3, "reps": "12"},
+      {"nombre": "Remo con pesas", "detalle": "Inclinada, tirar hacia la cintura", "sets": 3, "reps": "12"},
+      {"nombre": "Curl + press", "detalle": "Curl bíceps seguido de press hombros", "sets": 3, "reps": "10+10"},
+      {"nombre": "Caminata suave", "detalle": "Trotadora inclinación media", "sets": 1, "reps": "15 min"},
+      {"nombre": "Estiramientos", "detalle": "Todo el cuerpo", "sets": 1, "reps": "5 min"}
+    ]
+  },
+  {
+    "dia": "Sábado",
+    "tipo": "Activo - Explorar",
+    "icono": "🌳",
+    "ejercicios": [
+      {"nombre": "Caminata al aire libre", "detalle": "Explorar Medellín: Parque Arví, Guatapé, sendero", "sets": 1, "reps": "45-60 min"},
+      {"nombre": "Estiramientos", "detalle": "Al llegar a casa", "sets": 1, "reps": "10 min"}
+    ]
+  },
+  {
+    "dia": "Domingo",
+    "tipo": "Descanso Activo",
+    "icono": "🧘‍♀️",
+    "ejercicios": [
+      {"nombre": "Yoga / Estiramientos", "detalle": "YouTube: yoga para principiantes 20 min", "sets": 1, "reps": "20 min"},
+      {"nombre": "Caminata tranquila", "detalle": "Opcional, si te sientes bien", "sets": 1, "reps": "20 min"}
+    ]
+  }
+]

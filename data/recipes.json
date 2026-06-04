@@ -1,0 +1,107 @@
+[
+  {
+    "id": "huevos-revueltos",
+    "nombre": "Huevos Revueltos",
+    "tiempo": "5 min",
+    "calorias": 250,
+    "proteina": 18,
+    "dificultad": "Fácil",
+    "categoria": "desayuno",
+    "ingredientes": ["3 huevos", "1 cda de aceite de oliva", "Sal y pimienta", "Opcional: tomate, cebolla"],
+    "pasos": [
+      "Calienta el aceite en una sartén a fuego medio",
+      "Bate los 3 huevos en un bol con sal y pimienta",
+      "Vierte los huevos en la sartén",
+      "Revuelve suavemente con espátula cada 10 segundos",
+      "Retira del fuego cuando aún estén un poco húmedos (se siguen cocinando)",
+      "Sirve inmediato"
+    ]
+  },
+  {
+    "id": "avena-frutas",
+    "nombre": "Avena con Frutas",
+    "tiempo": "8 min",
+    "calorias": 300,
+    "proteina": 10,
+    "dificultad": "Fácil",
+    "categoria": "desayuno",
+    "ingredientes": ["1/2 taza de avena", "1 taza de agua o leche", "1 plátano o manzana", "Canela al gusto", "1 cdita de miel"],
+    "pasos": [
+      "Mezcla avena con agua o leche en una olla",
+      "Cocina a fuego medio por 5 minutos revolviendo",
+      "Retira del fuego cuando tenga consistencia cremosa",
+      "Corta la fruta en rodajas y agrégala encima",
+      "Agrega canela y miel al gusto"
+    ]
+  },
+  {
+    "id": "pollo-plancha",
+    "nombre": "Pechuga de Pollo a la Plancha",
+    "tiempo": "15 min",
+    "calorias": 280,
+    "proteina": 40,
+    "dificultad": "Fácil",
+    "categoria": "almuerzo",
+    "ingredientes": ["150g pechuga de pollo", "1 cda aceite de oliva", "Sal, pimienta, ajo en polvo", "Limón"],
+    "pasos": [
+      "Corta la pechuga en filetes delgados (bifés)",
+      "Sazona con sal, pimienta y ajo en polvo por ambos lados",
+      "Calienta el aceite en sartén a fuego medio-alto",
+      "Cocina 4-5 minutos por lado hasta que esté dorada",
+      "Exprime limón encima al servir"
+    ]
+  },
+  {
+    "id": "arroz-blanco",
+    "nombre": "Arroz Blanco",
+    "tiempo": "25 min",
+    "calorias": 200,
+    "proteina": 4,
+    "dificultad": "Fácil",
+    "categoria": "almuerzo",
+    "ingredientes": ["1 taza de arroz", "2 tazas de agua", "1 cda de aceite", "Sal al gusto"],
+    "pasos": [
+      "Lava el arroz bajo agua hasta que salga clara",
+      "En una olla calienta el aceite a fuego medio",
+      "Agrega el arroz y sofríe 1 minuto",
+      "Agrega el agua y la sal",
+      "Sube el fuego hasta hervir, luego baja a mínimo",
+      "Tapa y cocina 20 minutos SIN destapar",
+      "Apaga el fuego y deja reposar 5 minutos"
+    ]
+  },
+  {
+    "id": "ensalada-atun",
+    "nombre": "Ensalada con Atún",
+    "tiempo": "10 min",
+    "calorias": 320,
+    "proteina": 30,
+    "dificultad": "Fácil",
+    "categoria": "cena",
+    "ingredientes": ["1 lata de atún en agua", "Lechuga", "Tomate", "Pepino", "1/4 aguacate", "Limón, sal, aceite de oliva"],
+    "pasos": [
+      "Lava y corta las verduras",
+      "Mezcla lechuga, tomate, pepino en un plato",
+      "Escurre el atún y colócalo encima",
+      "Corta el aguacate en rodajas y agrégalo",
+      "Aliña con limón, aceite de oliva y sal"
+    ]
+  },
+  {
+    "id": "pollo-arroz-ensalada",
+    "nombre": "Almuerzo Completo: Pollo + Arroz + Ensalada",
+    "tiempo": "30 min",
+    "calorias": 650,
+    "proteina": 50,
+    "dificultad": "Media",
+    "categoria": "almuerzo",
+    "ingredientes": ["150g pechuga de pollo", "1/2 taza de arroz (cocido)", "Lechuga", "Tomate", "1/4 aguacate", "Limón, sal, aceite"],
+    "pasos": [
+      "Primero pon el arroz a cocinar (ver receta arroz blanco)",
+      "Mientras, prepara y cocina el pollo a la plancha (ver receta)",
+      "Prepara la ensalada con lechuga, tomate y aguacate",
+      "Sirve todo junto: 1/2 plato ensalada, 1/4 arroz, 1/4 pollo",
+      "Buen provecho!"
+    ]
+  }
+]

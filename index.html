@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <meta name="theme-color" content="#0f0f1a">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="apple-mobile-web-app-title" content="Mi Transformación">
+  <title>Mi Transformación</title>
+  <link rel="manifest" href="manifest.json">
+  <link rel="icon" href="icons/icon-192.png">
+  <link rel="apple-touch-icon" href="icons/icon-192.png">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <div class="app">
+    <header>
+      <h1>Mi Transformación</h1>
+      <div class="header-actions">
+        <button class="icon-btn" onclick="App.toggleTheme()" title="Cambiar tema">🌙</button>
+      </div>
+    </header>
+
+    <main id="content">
+      <div class="empty-state">
+        <div class="empty-icon">⏳</div>
+        <p>Cargando tu plan de transformación...</p>
+      </div>
+    </main>
+  </div>
+
+  <nav>
+    <div class="nav-inner">
+      <button class="nav-item active" data-tab="inicio">
+        <span class="nav-icon">🏠</span>
+        <span>Inicio</span>
+      </button>
+      <button class="nav-item" data-tab="habitos">
+        <span class="nav-icon">✅</span>
+        <span>Hábitos</span>
+      </button>
+      <button class="nav-item" data-tab="comida">
+        <span class="nav-icon">🍽️</span>
+        <span>Comida</span>
+      </button>
+      <button class="nav-item" data-tab="metas">
+        <span class="nav-icon">🎯</span>
+        <span>Metas</span>
+      </button>
+      <button class="nav-item" data-tab="mas">
+        <span class="nav-icon">📋</span>
+        <span>Más</span>
+      </button>
+    </div>
+  </nav>
+
+  <script src="js/storage.js"></script>
+  <script src="js/verse.js"></script>
+  <script src="js/routine.js"></script>
+  <script src="js/habits.js"></script>
+  <script src="js/weight.js"></script>
+  <script src="js/meals.js"></script>
+  <script src="js/goals.js"></script>
+  <script src="js/debt.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
