@@ -1,7 +1,7 @@
 {
-  "name": "Mi Transformación",
-  "short_name": "Transformación",
-  "description": "Tu plan de vida gamificado - Metas, hábitos, salud y crecimiento personal",
+  "name": "LevelUp Life",
+  "short_name": "LevelUp",
+  "description": "Level up your life - Goals, habits, health & personal growth gamified",
   "start_url": "/index.html",
   "display": "standalone",
   "background_color": "#0f0f1a",

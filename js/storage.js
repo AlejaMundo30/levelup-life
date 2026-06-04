@@ -1,12 +1,12 @@
 const Storage = {
   get(key, fallback = null) {
     try {
-      const data = localStorage.getItem('mt_' + key);
+      const data = localStorage.getItem('lvl_' + key);
       return data ? JSON.parse(data) : fallback;
     } catch { return fallback; }
   },
   set(key, value) {
-    localStorage.setItem('mt_' + key, JSON.stringify(value));
+    localStorage.setItem('lvl_' + key, JSON.stringify(value));
   },
   todayKey() {
     return new Date().toISOString().split('T')[0];

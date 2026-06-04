@@ -1,6 +1,6 @@
-# Mi Transformación PWA
+# LevelUp Life PWA
 
-App de seguimiento personal gamificada para transformar todas las áreas de vida.
+Gamified personal tracking app to level up every area of your life.
 
 ## Secciones
 
